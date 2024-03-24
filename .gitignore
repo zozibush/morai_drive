@@ -1,0 +1,11 @@
+# VSCode
+.vscode/**
+.idea/**
+.cache/**
+.history/**
+
+# Windows
+.DS_Store
+
+# Python
+**/__pycache__/**
