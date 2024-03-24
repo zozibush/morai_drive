@@ -1,0 +1,14 @@
+<launch>
+    <!-- time record -->
+	<node pkg="morai_drive" type="recorder.py" name="recorder" output="screen" />
+
+    <!-- rosbridge -->
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+
+    <!-- morai simulation -->
+	<node pkg="morai_drive" type="morai_exe.py" name="morai_exe" output="screen">
+        <param name="morai_params" value="$(find morai_drive)/src/scripts/utils/params.txt"/>
+        <param name="morai_network" value="network"/>
+        <param name="morai_scenario" value="control2_1"/>
+    </node>
+</launch>
