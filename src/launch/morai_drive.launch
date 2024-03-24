@@ -1,4 +1,4 @@
 <launch>
 	<node pkg="morai_drive" type="main.py" name="morai_drive" output="screen" />
-        <node pkg="rviz" type="rviz" name="rviz" args="-d $(find morai_drive)/rviz/morai_drive.rviz" />
+        <node pkg="rviz" type="rviz" name="rviz" args="-d $(find morai_drive)/src/rviz/morai_drive.rviz" />
 </launch>
